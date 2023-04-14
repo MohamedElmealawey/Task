@@ -1,0 +1,118 @@
+body{
+    margin: 0; padding: 0px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: red;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    animation: move 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: blue;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    animation: move 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: yellow;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    animation: move 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 12.5s;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: blue;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    animation: move2 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: yellow;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    animation: move2 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 9.5s;
+}
+.box6{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    animation: move2 3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 15.5s;
+}
+@keyframes move {
+    0%{
+        left: 0%;
+    }
+    25%{
+        left: 15%;
+    }
+    50%{
+        left: 40%;
+    }
+    75%{
+        left: 65%;
+    }
+    100%{
+        left: 87%;
+    }
+}
+@keyframes move2 {
+    0%{
+        right: 0%;
+    }
+    25%{
+        right: 15%;
+    }
+    50%{
+        right: 40%;
+    }
+    75%{
+        right: 65%;
+    }
+    100%{
+        right: 87%;
+    }
+}
